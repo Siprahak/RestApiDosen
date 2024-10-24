@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# dosen
+RewriteRule ^dosen/?$ dosen.php [NC,L]
+RewriteRule ^dosen/([0-9]+)/?$ dosen.php?id_dosen=$1 [NC,L]
+
+# matakuliah
+RewriteRule ^matakuliah/?$ matakuliah.php [NC,L]
+RewriteRule ^matakuliah/([0-9]+)/?$ matakuliah.php?id_matakuliah=$1 [NC,L]
+
+# mengajar
+RewriteRule ^mengajar/?$ mengajar.php [NC,L]
+RewriteRule ^mengajar/([0-9]+)/?$ mengajar.php?id_mengajar=$1 [NC,L]
